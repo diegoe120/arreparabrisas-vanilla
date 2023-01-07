@@ -85,7 +85,11 @@ p {
 .btn-wtapp {
   margin: 1rem;
   /* box-shadow: 1px 1px 1px rgba(157, 221, 169, 0.9); */
+<<<<<<< Updated upstream
   background-image: url(img/png-one-logo-whatsApp-png-transparente.png);
+=======
+  background-image: url(/img/png-one-logo-whatsApp-png-transparente.png);
+>>>>>>> Stashed changes
   background-size: cover;
   width: 100%;
   max-width: 3.125rem;
