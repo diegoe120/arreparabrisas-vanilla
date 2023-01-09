@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 /* probar combinacion de fuentes Bebas Neue + Source Sans Pro */
 
 * {
@@ -9,11 +9,9 @@
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
-/* body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+body {
+  display: block;
+}
 
 h1 {
   color: aliceblue;
@@ -26,18 +24,22 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: rgb(222, 223, 225);;
 }
-p {
+p, il {
+  font-family: Sourse Sans Pro, Arial, Helvetica, sans-serif;
   font-size: .8rem;
   font-style: normal;
+  line-height: 1.5em;
   color: aliceblue;
 }
+
 .contenedor {
+
   width: 100%;
   min-width: 320px;
-  height: 568px;
+  min-height: 480px;
   align-items: center;
   }
 
@@ -85,7 +87,7 @@ p {
   background-image: url(/img/fondo-nav.png);
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .titulo {
@@ -109,16 +111,17 @@ p {
 /* Nav */
 
 .nav {
+  display: flex;
+  flex-direction: column;
   position: sticky;
   top: 0;
   width: 100%;
   background-color: #333;
-  overflow: hidden;
 }
 
 .nav .btn-nav {
-  float: left;
-  display: block;
+  /* float: left;
+  display: block; */
   padding: 14px 16px;
   font-size: 17px;
   color: #7b7b7b;
@@ -159,9 +162,11 @@ p {
   right: 0;
   cursor: pointer;
   transition: 150ms;
+  z-index: 10;
 }
 .btn-wtapp:hover {
   opacity: 0.5;
+  /* border-radius: 50%; */
 }
 
 /* Nosotros  */
@@ -170,7 +175,7 @@ p {
     180deg,
     rgba(51, 51, 89, 1) 12%,
     rgba(64, 64, 154, 1) 53%,
-    rgb(126, 126, 136) 90%
+    rgb(100, 100, 109) 90%
   );
 }
 
@@ -188,7 +193,7 @@ p {
 .reparacion {
   background-image: linear-gradient(
   0deg,
-  hsl(240deg 4% 46%) 0%,
+  rgb(92, 92, 101) 0%,
   hsl(283deg 4% 42%) 8%,
   hsl(327deg 4% 39%) 15%,
   hsl(351deg 5% 37%) 23%,
@@ -210,7 +215,9 @@ p {
  text-align: center;
  padding: 2rem;
 }
-
+.reparacion h3 {
+  text-align: center;
+}
 .reparacion p {
   color: aliceblue;
   padding: .5rem;
