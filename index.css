@@ -6,4 +6,19 @@
     .t-shadow {
         text-shadow: 2px 2px 2px rgba(0,0,0,0.50);
     }
+
+    .animacion-d {
+        animation-duration: 3s;
+        animation-name: abajo;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    @keyframes abajo {
+        from {
+            top: 0px;
+        }
+        to {
+            top: 300px;
+        }
+    }
 }
