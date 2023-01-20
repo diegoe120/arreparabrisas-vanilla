@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/index.css">
   <title>Arreparabrisas</title>
-  <script src="./main.js"></script>
+  <script src="./main.js" defer></script>
 </head>
 <!-- style="background-image: url('/img/fondo-nav.png')" -->
 
@@ -27,39 +27,42 @@
     <!-- Button Whatsapp -->
 
     <button type="button" onclick="funcionllamada()"
-      class="justify-between fixed hover:opacity-50 rounded-full bottom-0 right-0 w-10 h-10 m-2 z-10">
+      class="justify-between fixed hover:bg-green-500:opacity-75 rounded-full bottom-0 right-0 w-10 h-10 m-2 z-10">
       <img src="./img/png-one-logo-whatsApp-png-transparente.png" alt="boton de whatsapp" srcset="">
     </button>
   </header>
 
   <!-- Menu -->
 
-  <nav class="flex fixed justify-between top-0 w-screen bg-gray-600 p-4 gap-2.5 justify-center  items-center">
+  <nav class="fixed top-0 w-screen bg-gray-600 p-4 shadow-lg z-10">
+    <div class=" container flex justify-between">
+      <a class="text-white text-xl" href="#hero">Arreparabrisas</a>
 
-    <a class="text-white text-lg" href="#hero">Arreparabrisas</a>
+      <button type="button" id="btn-menu" class="items-center" onclick="manejoMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
 
-    <button id="btn-menu">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-        class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
-    </button>
+    </div>
 
-    <ul id="menu" class="block ">
-      <li><a class="text-white" href="#reparacion">Reparación</a></li>
-      <li><a class="text-white" href="#clientes">Opinion de Clientes</a></li>
-      <li><a class="text-white" href="#presupuesto">Presupuesto</a></li>
-      <li><a class="text-white" href="#contacto">Contacto</a></li>
-      <li><a class="text-white" href="#nosotros">Nosotros</a></li>
+
+    <ul id="menu" class="flex-col p-2 text-center">
+      <li class="p-2"><a class="text-white hover:text-yellow-50" href="#reparacion">Reparación</a></li>
+      <li class="p-2"><a class="text-white hover:text-yellow-50" href="#clientes">Opinion de Clientes</a></li>
+      <li class="p-2"><a class="text-white hover:text-yellow-50" href="#presupuesto">Presupuesto</a></li>
+      <li class="p-2"><a class="text-white hover:text-yellow-50" href="#contacto">Contacto</a></li>
+      <li class="p-2"><a class="text-white hover:text-yellow-50" href="#nosotros">Nosotros</a></li>
     </ul>
   </nav>
 
   <!-- Secciones -->
 
-  <section class="bg-gradient-to-b from-gray-600 to-gray-200 ">
+  <section id="reparacion" class="bg-gradient-to-b from-gray-600 to-gray-200 p-3 ">
     <h2 class="font-sans text-gray-100 text-2xl text-center p-4">Reparación</h2>
     <article>
-      <h3 class="p-3 italic font-semibold">¿Como se hace la Reparacion?</h3>
+      <h3 class="italic font-semibold">¿Como se hace la Reparacion?</h3>
       <p class="p-3">
         Para comenzar el procedimiento de reparación de los golpes es un
         <strong>proceso artesanal</strong>, se extraer el aire que
@@ -246,12 +249,12 @@
     </article>
   </section>
 
-  <section class="bg-gradient-to-t from-stone-800 to-gray-400">
+  <section class="bg-gradient-to-t from-stone-800 to-gray-400 p-3">
     <h2 id="clientes" class="font-sans text-gray-100 text-2xl text-center">Referencia de Clientes</h3>
       <!-- aqui ira una api con los clientes y sus comentarios -->
   </section>
 
-  <section class="bg-gradient-to-b from-gray-600 to-gray-200">
+  <section class="bg-gradient-to-b from-gray-600 to-gray-200 p-3">
     <h2 id="presupuesto" class="font-sans text-gray-100 text-2xl text-center">Solicituda de Presupuesto</h3>
 
       <form action="" method="post" class="p-4 flex-col flex basis">
@@ -269,7 +272,7 @@
         <input type="file" name="foto" id="foto" placeholder="Agregue aqui las fotos" required>
       </form>
   </section>
-  <section class="consultas ">
+  <section class="bg-gradient-to-t from-stone-800 to-gray-400 p-3">
     <h2 id="consulta" class="font-sans text-gray-100 text-2xl text-center">Contacto</h2>
     <h3>Atendido unicamente por el dueño:</h3>
     <p>
@@ -280,8 +283,8 @@
       fotos para recibir una opinión sobre si es reparable y un presupuesto.
     </p>
   </section>
-  <section class></section>
-  <section id="nosotros" class="nosotros ">
+
+  <section class="bg-gradient-to-t from-stone-800 to-gray-400 p-3">
     <h2 class="font-sans text-gray-100 text-2xl text-center">Nosotros</h2>
     <article class="tarjeta-presentacion">
       <p>
@@ -299,10 +302,6 @@
     <div class="carrusel">
       <img src="" alt="" />
     </div>
-  </section>
-
-  <section class="precios ">
-    <h2 class="font-sans text-gray-100 text-2xl text-center">Precios</h2>
   </section>
 
 </body>

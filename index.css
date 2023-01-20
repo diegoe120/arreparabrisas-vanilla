@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .menu {
+      display: block;
+    }
+
+    .show {
+      display: none;
+    }
+  }
