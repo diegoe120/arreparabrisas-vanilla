@@ -1,10 +1,6 @@
-import './style.css';
+const menuButton = document.querySelector(".menu-button");
+const menu = document.querySelector("nav ul");
 
-function myFunction() {
-    var x = document.getElementById("nav");
-    if (x.className === "navegador") {
-        x.className += " responsive";
-    } else {
-        x.className = "navegador";
-    }
-}
+menuButton.addEventListener("click", function () {
+  menu.style.display = "flex";
+});
