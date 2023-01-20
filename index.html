@@ -7,10 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/index.css">
   <title>Arreparabrisas</title>
+  <script src="./main.js"></script>
 </head>
 <!-- style="background-image: url('/img/fondo-nav.png')" -->
 
 <body>
+
+  <!-- Hero -->
+
   <header id="hero" class=" bg-center bg-cover h-screen flex items-center "
     style="background-image: url('/img/hero2.jpg')">
     <div class="conteiner flex flex-col mt-10">
@@ -19,23 +23,29 @@
         parabrisas</h2>
       <p class="font-mono text-yellow-50 mt-6 text-center italic">"el placer de viajar con tranquilidad"</p>
     </div>
-    <div class="btn-wtapp"></div>
-    <button type="button" class="fixed rounded-full bottom-0 right-0 w-10 h-10 m-2">
+
+    <!-- Button Whatsapp -->
+
+    <button type="button" onclick="funcionllamada()"
+      class="justify-between fixed hover:opacity-50 rounded-full bottom-0 right-0 w-10 h-10 m-2 z-10">
       <img src="./img/png-one-logo-whatsApp-png-transparente.png" alt="boton de whatsapp" srcset="">
     </button>
   </header>
 
-  <nav id="nav" class="flex flex-col bg-gray-600 p-4 gap-2.5 justify-center  items-center content-center">
+  <!-- Menu -->
+
+  <nav class="flex fixed justify-between top-0 w-screen bg-gray-600 p-4 gap-2.5 justify-center  items-center">
 
     <a class="text-white text-lg" href="#hero">Arreparabrisas</a>
-    <button id="menu-button" class="text-white">
+
+    <button id="btn-menu">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
     </button>
 
-    <ul id="menu" class="hidden">
+    <ul id="menu" class="block ">
       <li><a class="text-white" href="#reparacion">Reparación</a></li>
       <li><a class="text-white" href="#clientes">Opinion de Clientes</a></li>
       <li><a class="text-white" href="#presupuesto">Presupuesto</a></li>
@@ -44,6 +54,7 @@
     </ul>
   </nav>
 
+  <!-- Secciones -->
 
   <section class="bg-gradient-to-b from-gray-600 to-gray-200 ">
     <h2 class="font-sans text-gray-100 text-2xl text-center p-4">Reparación</h2>
@@ -295,6 +306,6 @@
   </section>
 
 </body>
-<script src="./main.js"></script>
+
 
 </html>
