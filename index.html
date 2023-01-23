@@ -15,12 +15,12 @@
 
   <!-- Hero -->
 
-  <header id="hero" class=" bg-center bg-cover h-screen flex items-center "
+  <header id="hero" class="min-h-screen bg-center bg-cover h-screen flex items-center "
     style="background-image: url('/img/hero2.jpg')">
     <div class="conteiner flex flex-col mt-10">
       <h1 class="font-sans text-gray-300 text-5xl font-semibold text-center t-shadow animacion-d">Arreparabrisas</h1>
-      <h2 class="font-sans text-gray-100 text-2xl text-center mt-4 t-shadow">Reparación de golpes y rajaduras en el
-        parabrisas</h2>
+      <h2 class="font-sans text-gray-100 text-2xl text-center mt-4 t-shadow">Reparación de golpes y rajaduras del
+        parabrisas a domicilio</h2>
       <p class="font-mono text-yellow-50 mt-6 text-center italic">"el placer de viajar con tranquilidad"</p>
     </div>
 
@@ -34,7 +34,7 @@
 
   <!-- Menu -->
 
-  <nav class="fixed top-0 w-screen bg-gray-600 p-4 shadow-lg z-10">
+  <nav class="sticky top-0 w-screen bg-gray-600 p-4 shadow-lg z-10">
     <div class=" container flex justify-between">
       <a class="text-white text-xl" href="#hero">Arreparabrisas</a>
 
@@ -267,7 +267,7 @@
         <label for="tel">Numero de Telefono</label>
         <input type="tel" name="tel" id="tel">
         <label for="comentario">Comentario</label>
-        <input type="text" name="comentario" id="comentario" placeholder="Deje aqui una descripcion del daño">
+        <input type="textarea" name="comentario" id="comentario" placeholder="Deje aqui una descripcion del daño">
         <label for="foto">Foto</label>
         <input type="file" name="foto" id="foto" placeholder="Agregue aqui las fotos" required>
       </form>
