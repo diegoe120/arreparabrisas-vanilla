@@ -15,11 +15,11 @@
 
   <!-- Hero -->
 
-  <header id="hero" class="min-h-screen bg-center bg-cover h-screen flex items-center "
+  <header id="hero" class="flex min-h-screen bg-center bg-cover  items-center"
     style="background-image: url('/img/hero2.jpg')">
     <div class="conteiner flex flex-col mt-10">
       <h1 class="font-sans text-gray-300 text-5xl font-semibold text-center t-shadow animacion-d">Arreparabrisas</h1>
-      <h2 class="font-sans text-gray-100 text-2xl text-center mt-4 t-shadow">Reparación de golpes y rajaduras del
+      <h2 class="font-sans pl-6 text-gray-100 text-2xl text-center mt-4 t-shadow">Reparación de golpes y rajaduras del
         parabrisas a domicilio</h2>
       <p class="font-mono text-yellow-50 mt-6 text-center italic">"el placer de viajar con tranquilidad"</p>
     </div>
@@ -33,29 +33,23 @@
   </header>
 
   <!-- Menu -->
-
-  <nav class="sticky top-0 w-screen bg-gray-600 p-4 shadow-lg z-10">
-    <div class=" container flex justify-between">
-      <a class="text-white text-xl" href="#hero">Arreparabrisas</a>
-
-      <button type="button" id="btn-menu" class="items-center" onclick="manejoMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-      </button>
-
+  <nav class="top-nav sticky top-0">
+    <div>
+      <a class="text-white hover:text-yellow-50" href="#hero">Arreparabrisas</a>
     </div>
-
-
-    <ul id="menu" class="flex-col p-2 text-center">
-      <li class="p-2"><a class="text-white hover:text-yellow-50" href="#reparacion">Reparación</a></li>
-      <li class="p-2"><a class="text-white hover:text-yellow-50" href="#clientes">Opinion de Clientes</a></li>
-      <li class="p-2"><a class="text-white hover:text-yellow-50" href="#presupuesto">Presupuesto</a></li>
-      <li class="p-2"><a class="text-white hover:text-yellow-50" href="#contacto">Contacto</a></li>
-      <li class="p-2"><a class="text-white hover:text-yellow-50" href="#nosotros">Nosotros</a></li>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+      <li><a class="text-white hover:text-yellow-50" href="#reparacion">Reparación</a></li>
+      <li><a class="text-white hover:text-yellow-50" href="#clientes">Opinion de Clientes</a></li>
+      <li><a class="text-white hover:text-yellow-50" href="#presupuesto">Presupuesto</a></li>
+      <li><a class="text-white hover:text-yellow-50" href="#contacto">Contacto</a></li>
+      <li><a class="text-white hover:text-yellow-50" href="#nosotros">Nosotros</a></li>
     </ul>
   </nav>
+
 
   <!-- Secciones -->
 
